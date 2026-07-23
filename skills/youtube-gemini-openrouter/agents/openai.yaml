@@ -1,0 +1,4 @@
+interface:
+  display_name: "YouTube Gemini via OpenRouter"
+  short_description: "Analyze YouTube videos through OpenRouter"
+  default_prompt: "Use $youtube-gemini-openrouter to analyze this public YouTube video multimodally with timestamps."
