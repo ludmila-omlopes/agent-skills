@@ -20,6 +20,16 @@ Python helper for safe request construction and Markdown output.
 Good for: timestamped summaries, chapters, comparisons, visual reactions, hooks, highlights, and
 editing notes when an API-based workflow is preferred.
 
+### `youtube-gemini-api`
+
+The simplest API option: one dependency-free Python script that sends a public YouTube URL and
+your prompt straight to the Gemini API. No downloads, no yt-dlp, no ffmpeg — just
+`GEMINI_API_KEY` (free at [aistudio.google.com/apikey](https://aistudio.google.com/apikey)).
+Supports analyzing a time window (`--start/--end`) and low media resolution for long videos.
+
+Good for: summaries, transcripts, timestamps, key points, and any question about a video, from
+any agent that can run a command.
+
 ## Install
 
 Install everything in this collection:
@@ -33,6 +43,7 @@ Or just one skill:
 ```bash
 npx skills add ludmila-omlopes/agent-skills --skill youtube-gemini-analyzer
 npx skills add ludmila-omlopes/agent-skills --skill youtube-gemini-openrouter
+npx skills add ludmila-omlopes/agent-skills --skill youtube-gemini-api
 ```
 
 The CLI auto-detects which coding agents you have installed and places the skill in the right directory (e.g. `.claude/skills/`). Browse more at [skills.sh](https://www.skills.sh/).
