@@ -1,0 +1,4 @@
+interface:
+  display_name: "YouTube Gemini API"
+  short_description: "Analyze YouTube videos with the Gemini API"
+  default_prompt: "Use $youtube-gemini-api to analyze this public YouTube video with timestamps."
